@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form>
+      <input type="text" name="txtname" id="txtid" class="txtclass2">
+      <input type="text" name="txtname2" id="txtid2" class="txtclass">
+      <button type="button" name="button" onclick="buttonclick()">click</button>
+
+    </form>
+
+  </body>
+</html>
+
+<script type="text/javascript">
+  function buttonclick() {
+    // var value = document.getElementById("txtid").value;
+    // document.writeln(value);
+
+    // var value2 = document.getElementById("txtid2").value;
+    // document.writeln(value2);
+
+    var value3 = document.getElementsByClassName("txtclass");
+    alert("get length name:"+value3.length);
+    for(i=0;i<value3.length;i++){
+      alert("get value by Name:"+value3[i].value);
+    }
+
+  }
+
+</script>
